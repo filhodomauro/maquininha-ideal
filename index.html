@@ -62,7 +62,7 @@
                   <a class="nav-link" href="#questions_form">Escolha a sua</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#about">Sobre nós</a>
+                  <a class="nav-link" href="#machines">Maquininhas</a>
                </li>
                
                <li class="nav-item">
@@ -113,24 +113,75 @@
                     </div><!--/.title-->
                 </div>
                 <div class="w-100"></div>
-                <div class="col-md-12 shadow">
+                <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="contact_form">
                                 <form>
-                                    <div class="form-group">
-                                        <label for="name1">Name</label>
-                                        <input type="text" id="name1" placeholder="Your name here"/>
+                                    <div class="form-group shadow">
+                                        <label for="buy_rent">1. Pensando na forma de adquirir uma maquininha, você prefere pagar uma espécie de aluguel mensal ou comprar uma maquinha de forma parcelada?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="buy_rent" id="buy" value="buy">
+                                            <label class="form-check-label" for="buy">
+                                                Prefiro Comprar
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="buy_rent" id="rent" value="rent">
+                                            <label class="form-check-label" for="rent">
+                                                Prefiro Alugar
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email1">Email</label>
-                                        <input type="email" id="email1" placeholder="Your email here"/>
+                                    <div class="form-group shadow">
+                                        <label for="debit_value">2. Mensalmente, quanto você acredita que venderá utilizando a função débito?</label>
+                                        <input type="number" id="debit_value" placeholder="Digíte o valor aproximado" min="0" max="999999999"/>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="message1">Message</label>
-                                        <textarea id="message1" placeholder="Your message here" cols="10" rows="3"></textarea>
+                                    <div class="form-group shadow">
+                                        <label for="credit_value">3. No crédito a vista?</label>
+                                        <input type="number" id="credit_value" placeholder="Digíte o valor aproximado" min="0" max="999999999"/>
                                     </div>
-                                    <button type="submit">send</button>
+                                    <div class="form-group shadow">
+                                        <label for="installment_credit_value">4. No crédito parcelado?</label>
+                                        <input type="number" id="installment_credit_value" placeholder="Digíte o valor aproximado" min="0" max="999999999"/>
+                                    </div>
+                                    <div class="form-group shadow">
+                                        <label for="buy_rent">5. Você gostaria de adiantar o valor a receber (o que foi transacionado no crédito) mesmo pagando uma taxa por isso?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="receipt_of_credit" id="antecipate_receipt_of_credit" value="antecipate_receipt">
+                                            <label class="form-check-label" for="antecipate_receipt_of_credit">
+                                                Quero Adiantar
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="receipt_of_credit" id="wait_receipt_of_credit" value="wait_receipt">
+                                            <label class="form-check-label" for="wait_receipt_of_credit">
+                                                Posso Esperar
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group shadow">
+                                        <label for="buy_rent">6. Pensando na sua próxima maquininha, o que você mais valoriza?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="receipt_of_credit" id="antecipate_receipt_of_credit" value="antecipate_receipt">
+                                            <label class="form-check-label" for="antecipate_receipt_of_credit">
+                                                Menores taxas aplicadas em cada parcela
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="receipt_of_credit" id="wait_receipt_of_credit" value="wait_receipt">
+                                            <label class="form-check-label" for="wait_receipt_of_credit">
+                                                Menor preco de Compra/Aluguel da máquininha
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="receipt_of_credit" id="wait_receipt_of_credit" value="wait_receipt">
+                                            <label class="form-check-label" for="wait_receipt_of_credit">
+                                                Reputação da empresa
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" id="bt_find_machine">Buscar</button>
                                 </form>
                             </div><!--/.contact_form-->
                         </div>
@@ -141,44 +192,6 @@
         </div><!--/.container-->
     </section>
     <!--/CONTACT-->
-
-    <!--ABOUT US-->
-    <section class="about_us" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about_left_txt">
-                        <div class="title">
-                            <h3>about <b>us</b></h3>
-                            <div class="underline"></div>
-                            <div class="btn-group">
-                                <a href="#" class="btn">our mission</a>
-                                <a href="#" class="btn">our vision</a>
-                            </div>
-                        </div><!--/.title-->
-                        <div class="about_txt">
-                            <p>Piusto odio dignissimos ducimus qui blanditiis praesentium voluptatum del eniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-
-                            <p>Mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facil est et expedita distinctio. Nam libero tempore, cum soluta nobis esteligendi optio cumque nihil impedit quo minus id quod maxime.</p>
-
-                            <p>Placeat facere possimus, omnis voluptas assumenda est, omnis dolor repell
-                            endus. Temporibus autem quibusdam.</p>
-
-                            <p>Piusto odio dignissimos ducimus qui blanditiis praesentium voluptatum del
-                            eniti atque corrupti quos dolores et quas molestias excepturi sint occae
-                            cati cupiditate non provident, similique sunt in culpa qui officia.</p>
-                        </div>
-                    </div><!--/.about_left_txt-->
-                </div>
-                <div class="col-md-6">
-                    <div class="about_right_img">
-                        <img src="http://via.placeholder.com/600x475" width="600" height="475" alt=""/>
-                    </div><!--/.about_right_img-->
-                </div>
-            </div>
-        </div><!--/.container-->
-    </section>
-    <!--/ABOUT US-->
 
     <!-- OUR TEAM-->
     <section class="our_team" id="team">
